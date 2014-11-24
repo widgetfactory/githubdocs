@@ -10,8 +10,6 @@
 
 defined('_JEXEC') or die;
 
-require __DIR__ . '/parsedown/Parsedown.php';
-
 /**
  * Plug-in to enable loading github MD files into content (e.g. articles)
  * This uses the {githubdocs} syntax
@@ -96,12 +94,14 @@ class PlgContentGithubdocs extends JPlugin
 			return $this->parseMarkdown($data);
 		}
 		
-		return false;
+		return '';
 	}
 	
 	protected function parseMarkdown($data) 
 	{
-		$Parsedown = new Parsedown();
+		require_once __DIR__ . '/parsedown/Parsedown.php';
+
+$Parsedown = new Parsedown();
 		return $Parsedown->text($data); 
 	}
 }
