@@ -101,7 +101,7 @@ class PlgContentGithubdocs extends JPlugin
 	{
 		require_once __DIR__ . '/parsedown/Parsedown.php';
 
-$Parsedown = new Parsedown();
+                $Parsedown = new Parsedown();
 		return $Parsedown->text($data); 
 	}
 }
