@@ -33,6 +33,11 @@ class PlgContentGithubdocs extends JPlugin
 		parent::__construct($subject, $config);
 	}
 	
+	public function onPrepareContent(&$article, &$params, $limitstart) {
+		$context = JRequest::getCmd('option');
+		$this->onContentPrepare($context, &$article, &$params, $$limitstart);	
+	}
+	
 	/**
 	 * Plugin that loads github md file data within content
 	 *
