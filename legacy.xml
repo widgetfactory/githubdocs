@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>GitHub Docs</name>
+	<author>Ryan Demmer</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright (C) 2014 Ryan Demmer. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>ryan@widgetfactorylimited.co.uk</authorEmail>
+	<authorUrl>www.widgetfactorylimited.co.uk</authorUrl>
+	<version>1.0.1</version>
+	<description>GitHub Docs Content Plugin</description>
+	<files>
+		<filename plugin="githubdocs">githubdocs.php</filename>
+		<filename>index.html</filename>
+		<folder>parsedown</folder>
+	</files>
+	<languages></languages>
+	<params>
+				<param name="account" type="text"
+					default=""
+					description="Github Account"
+					label="Github Account"/>
+				<param name="repo" type="text"
+					default=""
+					description="Github Repo"
+					label="Github Repo"/>
+	</params>
+</install>
