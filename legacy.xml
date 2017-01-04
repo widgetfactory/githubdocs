@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install version="1.5" type="plugin" group="content">
+<install version="1.5" type="plugin" group="content" method="upgrade">
 	<name>GitHub Docs</name>
 	<author>Ryan Demmer</author>
 	<creationDate>November 2014</creationDate>
@@ -10,8 +10,8 @@
 	<version>1.0.1</version>
 	<description>GitHub Docs Content Plugin</description>
 	<files>
-		<filename plugin="githubdocs">githubdocs.php</filename>
-		<filename>index.html</filename>
+		<file plugin="githubdocs">githubdocs.php</file>
+		<file>index.html</file>
 		<folder>parsedown</folder>
 	</files>
 	<languages></languages>
