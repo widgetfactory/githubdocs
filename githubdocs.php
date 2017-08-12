@@ -63,7 +63,7 @@ class PlgSystemGithubdocs extends JPlugin
 		}
 
 		// Expression to search for (slug)
-		$regex = '/{githubdocs\s(.*?)}/i';
+		$regex = '/{githubdocs\s([\w-\/]+)}/i';
 
 		// Find all instances of plugin and put in $matches for githubdocs
 		// $matches[0] is full pattern match, $matches[1] is the slug
