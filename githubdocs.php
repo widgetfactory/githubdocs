@@ -1,7 +1,7 @@
 <?php
 /**
  * @package     Joomla.Plugin
- * @subpackage  Content.githubdocs
+ * @subpackage  System.githubdocs
  *
  * @copyright   Copyright (C) 2014 Ryan Demmer. All rights reserved.
  * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
@@ -15,9 +15,9 @@ defined('_JEXEC') or die;
  * This uses the {githubdocs} syntax
  *
  * @package     Joomla.Plugin
- * @subpackage  Content.githubdocs
+ * @subpackage  System.githubdocs
  */
-class PlgContentGithubdocs extends JPlugin
+class PlgSystemGithubdocs extends JPlugin
 {
 	/**
 	 * Constructor
